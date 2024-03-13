@@ -238,13 +238,15 @@
         <div
           class="w-full grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3"
         >
+        <audio id="myAudio" controls>
+          Your browser does not support the audio element.
           <div class="sermon-card shadow-md bg-ash">
             <div class="sermon-img">
               <div class="sermon-overlay border gap-4">
-                <button class="border">
+                <button onclick="playAudio()" class="border">
                   <i class="fa-solid fa-play"></i> Listen
                 </button>
-                <button class="border">
+                <button onclick="downloadAudio()" class="border">
                   <i class="fa-solid fa-download"></i> Download
                 </button>
               </div>
@@ -259,13 +261,15 @@
               <p class="italic text-scarlet">by: Pastor Mic Mike</p>
             </div>
           </div>
+        </audio>
+
           <div class="sermon-card shadow-md bg-ash">
             <div class="sermon-img">
               <div class="sermon-overlay border gap-4">
-                <button class="border">
+                <button onclick="playAudio()" class="border">
                   <i class="fa-solid fa-play"></i> Listen
                 </button>
-                <button class="border">
+                <button onclick="downloadAudio()" class="border">
                   <i class="fa-solid fa-download"></i> Download
                 </button>
               </div>
@@ -283,10 +287,10 @@
           <div class="sermon-card shadow-md bg-ash">
             <div class="sermon-img">
               <div class="sermon-overlay border gap-4">
-                <button class="border">
+                <button onclick="playAudio()" class="border">
                   <i class="fa-solid fa-play"></i> Listen
                 </button>
-                <button class="border">
+                <button onclick="downloadAudio()" class="border">
                   <i class="fa-solid fa-download"></i> Download
                 </button>
               </div>

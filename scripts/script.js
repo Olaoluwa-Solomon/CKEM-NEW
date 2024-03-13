@@ -1,3 +1,5 @@
+const audioUrl = 'assets/audio/Victoria-Orenze-Chants-Tongues-PraiseZion.com_.mp3';
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     speed: 1000,
@@ -63,3 +65,31 @@ function handleToggle() {
 toogler.addEventListener('click', handleToggle);
 
 
+function downloadAudio() {
+  
+  // Create an invisible anchor element
+  const link = document.createElement('a');
+  link.style.display = 'none';
+  link.href = audioUrl;
+  link.download = 'audio_file.mp3'; 
+  document.body.appendChild(link);
+  
+  
+  link.click();
+  
+  
+  document.body.removeChild(link);
+}
+
+function playAudio() {
+  
+  // Get the audio element
+  const audio = document.getElementById('myAudio');
+  console.log(audio)
+  
+  // Set the audio source
+  audio.src = audioUrl;
+  
+  // Play the audio
+  audio.play();
+}
